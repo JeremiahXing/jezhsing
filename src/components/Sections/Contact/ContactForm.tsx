@@ -40,6 +40,7 @@ const ContactForm: FC = memo(() => {
        * */
       console.log('Data to send: ', data);
       const apiKey = process.env.EMAIL_VAILD_API_KEY;
+      console.log("apiKey: ", apiKey);
       const apiURL = 'https://emailvalidation.abstractapi.com/v1/?api_key=' + apiKey
       try {
         const vaildationResponse = await fetch(apiURL+'&email='+data.from_email);
