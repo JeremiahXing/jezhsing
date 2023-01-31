@@ -79,7 +79,7 @@ const Testimonials: FC = memo(() => {
         )}
         style={imageSrc ? {backgroundImage: `url(${resolveSrc}`} : undefined}>
         <div className="z-10 w-full max-w-screen-md px-4 lg:px-0">
-          <div className="flex flex-col items-center gap-y-6 rounded-xl bg-gray-800/60 p-6 shadow-lg">
+          <div className="flex flex-col items-center gap-y-6 rounded-xl bg-indigo-900/50 p-6 shadow-lg">
             <div
               className="no-scrollbar flex w-full touch-pan-x snap-x snap-mandatory gap-x-6 overflow-x-auto scroll-smooth"
               onScroll={handleScroll}
@@ -97,7 +97,7 @@ const Testimonials: FC = memo(() => {
                 return (
                   <button
                     className={classNames(
-                      'h-3 w-3 rounded-full bg-gray-300 transition-all duration-500 sm:h-4 sm:w-4',
+                      'h-3 w-3 rounded-full bg-violet-300 transition-all duration-500 sm:h-4 sm:w-4',
                       isActive ? 'scale-100 opacity-100' : 'scale-75 opacity-60',
                     )}
                     disabled={isActive}

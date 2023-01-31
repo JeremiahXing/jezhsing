@@ -1,16 +1,19 @@
+import emailjs from '@emailjs/browser';
 import {FC, memo, useCallback, useMemo, useState} from 'react';
 
+
+
 interface FormData {
-  name: string;
-  email: string;
+  from_name: string;
+  from_email: string;
   message: string;
 }
 
 const ContactForm: FC = memo(() => {
   const defaultData = useMemo(
     () => ({
-      name: '',
-      email: '',
+      from_name: '',
+      from_email: '',
       message: '',
     }),
     [],
@@ -36,20 +39,45 @@ const ContactForm: FC = memo(() => {
        * This is a good starting point to wire up your form submission logic
        * */
       console.log('Data to send: ', data);
+      const apiKey = process.env.EMAIL_VAILD_API_KEY;
+      const apiURL = 'https://emailvalidation.abstractapi.com/v1/?api_key=' + apiKey
+      try {
+        const vaildationResponse = await fetch(apiURL+'&email='+data.from_email);
+        const vaildationData = await vaildationResponse.json();
+        console.log(vaildationData);
+        if (vaildationData.is_smtp_valid.value) {
+          const serviceID: string = process.env.EMAILJS_SERVICE_ID ? process.env.EMAILJS_SERVICE_ID : '';
+          const templateID: string = process.env.EMAILJS_TEMPLATE_ID ? process.env.EMAILJS_TEMPLATE_ID : '';
+          const publicKey: string = process.env.EMAILJS_PUBLIC_KEY ? process.env.EMAILJS_PUBLIC_KEY : '';
+          emailjs.sendForm(serviceID, templateID, event.target as HTMLFormElement, publicKey)
+            .then((result) => {
+              alert('Thanks for reaching out! We will get back to you shortly.');
+              console.log(result.text);
+            }, (error) => {
+              console.log(error.text);
+            });
+        } else {
+          alert('Please enter a valid email address');
+        }
+      }
+      catch (error) {
+        alert('Something went wrong. Please try again later.');
+        console.error(error);
+      }
     },
     [data],
   );
 
   const inputClasses =
     'bg-indigo-900/50 border-0 focus:border-0 focus:outline-none focus:ring-1 focus:ring-violet-600 rounded-md placeholder:text-neutral-400 placeholder:text-sm text-neutral-300 text-sm';
-
+  
   return (
     <form className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSendMessage}>
-      <input className={inputClasses} name="name" onChange={onChange} placeholder="Name" required type="text" />
+      <input className={inputClasses} name="from_name" onChange={onChange} placeholder="Name" required type="text" />
       <input
         autoComplete="email"
         className={inputClasses}
-        name="email"
+        name="from_email"
         onChange={onChange}
         placeholder="Email"
         required

@@ -5,7 +5,7 @@ import {SectionId} from '../../data/data';
 import Socials from '../Socials';
 
 const Footer: FC = memo(() => (
-  <div className="relative bg-[#0f0e13] px-4 pb-6 pt-12 sm:px-8 sm:pt-14 sm:pb-8">
+  <div className="relative bg-[#1F0E37] px-4 pb-6 pt-12 sm:px-8 sm:pt-14 sm:pb-8">
     <div className="absolute inset-x-0 -top-4 flex justify-center sm:-top-6">
       <a
         className="rounded-full bg-neutral-100 p-1 ring-white ring-offset-2 ring-offset-gray-700/80 focus:outline-none focus:ring-2 sm:p-2"
@@ -14,10 +14,11 @@ const Footer: FC = memo(() => (
       </a>
     </div>
     <div className="flex flex-col items-center gap-y-6">
-      <div className="flex gap-x-4 text-neutral-500">
+      <div className="flex gap-x-4 text-indigo-800">
         <Socials />
       </div>
-      <span className="text-sm text-neutral-700">© 2023 Jeremiah Hsing</span>
+      <p className='text-indigo-800'>In Tech We Trust.</p>
+      <span className="text-sm text-indigo-800">© 2023 Jeremiah Hsing</span>
     </div>
   </div>
 ));

@@ -55,18 +55,42 @@ th {
 }
 
 .gradient-bg {
-  background-color:#0f0e13;
+  background-color:#1F0E37;
   background-image: 
-    radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
-    radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%), 
-    radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%);
+    radial-gradient(at 0% 0%, #1E3AA9 0, transparent 50%), 
+    radial-gradient(at 50% 0%, #FF0F7B 0, transparent 50%), 
+    radial-gradient(at 100% 0%, #9340FF 0, transparent 50%);
+}
+
+.gradient-bg-about {
+  background-image: 
+    radial-gradient(at -10% 10%, #543D85 0, transparent 50%), 
+    radial-gradient(at 50% 10%, #77A48A 0, transparent 50%), 
+    radial-gradient(at 100% 10%, #0065AC 0, transparent 50%);
+    background-color:#1F0E37;
+}
+
+.gradient-bg-profile {
+  background-image: 
+    radial-gradient(at 0% 90%, #1E3AA9 0, transparent 50%), 
+    radial-gradient(at 50% 75%, #FF0F7B 0, transparent 50%), 
+    radial-gradient(at 75% 50%, #9340FF 0, transparent 50%);
+    background-color:#1F0E37;
+}
+
+.gradient-bg-contact {
+  background-image: 
+    radial-gradient(at 0% -20%, #1E3AA9 0, transparent 50%), 
+    radial-gradient(at 50% -50%, #FF0F7B 0, transparent 50%), 
+    radial-gradient(at 150% 35%, #9340FF 0, transparent 50%);
+    background-color:#1F0E37;
 }
 
 .gradient-bg-bar {
   background-color:#1F0E37;
   background-image: 
-    radial-gradient(at 100% 0%, #FF0F7B 0, transparent 50%),
-    radial-gradient(at 50% 0%,  #9340FF 0, transparent 50%), 
-    radial-gradient(at 0% 0%,  #1E3AA9 0, transparent 50%);
+    radial-gradient(at 125% 0%, #FF0F7B 0, transparent 75%),
+    radial-gradient(at 50% 50%,  #9340FF 0, transparent 75%), 
+    radial-gradient(at 0% 125%,  #1E3AA9 0, transparent 75%);
     ;
 }
