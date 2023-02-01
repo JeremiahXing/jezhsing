@@ -30,6 +30,13 @@ const nextConfig = {
   images: {
     domains: ['images.unsplash.com', 'source.unsplash.com'],
   },
+  env: {
+    EMAIL_VAILD_API_URL: process.env.EMAIL_VAILD_API_URL,
+    EMAIL_VAILD_API_KEY: process.env.EMAIL_VAILD_API_KEY,
+    EMAILJS_SERVICE_ID: process.env.EMAILJS_SERVICE_ID,
+    EMAILJS_TEMPLATE_ID: process.env.EMAILJS_TEMPLATE_ID,
+    EMAILJS_PUBLIC_KEY: process.env.EMAILJS_PUBLIC_KEY,
+  },
 };
 
 module.exports = nextConfig;
