@@ -44,8 +44,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'I\'m Jeremiah Hsing',
-  description: "This is a personal page about Jeremiah Hsing.",
+  title: "I'm Jeremiah Hsing",
+  description: 'This is a personal page about Jeremiah Hsing.',
 };
 
 /**
@@ -73,13 +73,13 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Canberra based <strong className="text-stone-100">Advanced Computing Undergraduate Student</strong>, currently in my honors year
-        at <strong className="text-stone-100">ANU</strong> 
+        I'm a Canberra based <strong className="text-stone-100">Advanced Computing Undergraduate Student</strong>,
+        currently in my honors year at <strong className="text-stone-100">ANU</strong>
       </p>
       {/* helping build a modern, mobile-first, domain registrar and site builder. */}
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time, you can catch me training in <strong className="text-stone-100">tennis</strong>,
-        chilling on <strong className="text-stone-100">billiards</strong>, or exploring beautiful indigenous{' '}
+        In my free time, you can catch me training in <strong className="text-stone-100">tennis</strong>, chilling on{' '}
+        <strong className="text-stone-100">billiards</strong>, or exploring beautiful indigenous{' '}
         <strong className="text-stone-100">Ngunnawal and Ngambri</strong> land.
       </p>
     </>
@@ -279,21 +279,20 @@ export const education: TimelineItem[] = [
     date: 'July 2022 - Present',
     location: 'Australian National University',
     title: 'Bachelor of Advanced Computing (Honors)',
-    content: <p>
-      Specialized in system and architecture, with a focus on web developing.
-      </p>,
+    content: <p>Specialized in system and architecture, with a focus on web developing.</p>,
   },
   {
     date: 'March 2013',
     location: 'School of Business',
     title: 'How to Make Fried Rice 101',
-    content: <p>
-      Lorem ipsum dolor sit amet. Aut modi eaque non ipsam consectetur nam minima 
-      labore est porro totam est atque repellat. Est iste dolorem et Quis galisum est
-      repudiandae aspernatur aut doloribus ipsam ut distinctio tempora At molestias 
-      laboriosam id voluptatem quia. Est sunt sequi cum corrupti sunt et nesciunt molestiae 
-      et officiis dolore!
-    </p>,
+    content: (
+      <p>
+        Lorem ipsum dolor sit amet. Aut modi eaque non ipsam consectetur nam minima labore est porro totam est atque
+        repellat. Est iste dolorem et Quis galisum est repudiandae aspernatur aut doloribus ipsam ut distinctio tempora
+        At molestias laboriosam id voluptatem quia. Est sunt sequi cum corrupti sunt et nesciunt molestiae et officiis
+        dolore!
+      </p>
+    ),
   },
 ];
 
@@ -304,9 +303,8 @@ export const experience: TimelineItem[] = [
     title: 'Senior Software Engineer',
     content: (
       <p>
-        In sapiente modi vel quasi autem eos consectetur laboriosam! 
-        Est atque dolorem ut praesentium doloribus et facere facere non consequatur 
-        consequatur.
+        In sapiente modi vel quasi autem eos consectetur laboriosam! Est atque dolorem ut praesentium doloribus et
+        facere facere non consequatur consequatur.
       </p>
     ),
   },
@@ -316,10 +314,9 @@ export const experience: TimelineItem[] = [
     title: 'Junior Bug Fixer',
     content: (
       <p>
-        Et vitae quasi aut dicta voluptas a alias neque aut saepe aliquam. 
-        Sed aspernatur unde et dolores enim et exercitationem repellendus ut iste 
-        nulla qui expedita aliquid vel magni alias At repellat illo. 
-        Est officiis illo id nostrum iste non autem enim.
+        Et vitae quasi aut dicta voluptas a alias neque aut saepe aliquam. Sed aspernatur unde et dolores enim et
+        exercitationem repellendus ut iste nulla qui expedita aliquid vel magni alias At repellat illo. Est officiis
+        illo id nostrum iste non autem enim.
       </p>
     ),
   },
@@ -329,9 +326,9 @@ export const experience: TimelineItem[] = [
     title: 'Account Manager',
     content: (
       <p>
-        Responsible for managing (and paying for) accounts shared by 5 globally distributed family members.
-        Exceeded market benchmarks by typing passwords using Roku remote at 481% accuracy or more significance.
-        Multi-year recipient of suggestions for movies I've already watched.
+        Responsible for managing (and paying for) accounts shared by 5 globally distributed family members. Exceeded
+        market benchmarks by typing passwords using Roku remote at 481% accuracy or more significance. Multi-year
+        recipient of suggestions for movies I've already watched.
       </p>
     ),
   },
@@ -341,9 +338,8 @@ export const experience: TimelineItem[] = [
     title: 'Uncertified Genius',
     content: (
       <p>
-        Led remote tech support for older family members throughout the country.
-        Maintained Siri comprehension rate of over 55% for three consecutive years.
-        Once put off a software update for over 8 months.
+        Led remote tech support for older family members throughout the country. Maintained Siri comprehension rate of
+        over 55% for three consecutive years. Once put off a software update for over 8 months.
       </p>
     ),
   },
@@ -353,9 +349,8 @@ export const experience: TimelineItem[] = [
     title: 'Prime Member',
     content: (
       <p>
-        Increased order volume by 823% over 7 years
-        Researched diverse product catalog, spanning departments from Simplehuman bag liners to cat food.
-        Regularly reported on product quality using review portal.
+        Increased order volume by 823% over 7 years Researched diverse product catalog, spanning departments from
+        Simplehuman bag liners to cat food. Regularly reported on product quality using review portal.
       </p>
     ),
   },
@@ -365,9 +360,9 @@ export const experience: TimelineItem[] = [
     title: 'Senior Advertising Target',
     content: (
       <p>
-        Recruited as early user for my experience with having an @edu email address.
-        Received a "Facebook Beanie" award for performance in 2006 March Madness bracket.
-        Consistently retargeted by F500 brands such as Samsung, Proctor & Gamble, and Verizon.
+        Recruited as early user for my experience with having an @edu email address. Received a "Facebook Beanie" award
+        for performance in 2006 March Madness bracket. Consistently retargeted by F500 brands such as Samsung, Proctor &
+        Gamble, and Verizon.
       </p>
     ),
   },
@@ -382,7 +377,8 @@ export const testimonial: TestimonialSection = {
     {
       name: 'Satoshi Catamoto',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-      image: 'https://cdn.commercialandlegal-legalservices.com.au/wp-content/uploads/2018/03/Unknown-Person-Image-1-e1562653526174.png',
+      image:
+        'https://cdn.commercialandlegal-legalservices.com.au/wp-content/uploads/2018/03/Unknown-Person-Image-1-e1562653526174.png',
     },
     {
       name: 'Trevor Philips',
@@ -403,7 +399,8 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Share any details about your ideas, or any other information you would like to share with potential clients/employees/partners/friends.',
+  description:
+    'Share any details about your ideas, or any other information you would like to share with potential clients/employees/partners/friends.',
   items: [
     {
       type: ContactType.Email,
