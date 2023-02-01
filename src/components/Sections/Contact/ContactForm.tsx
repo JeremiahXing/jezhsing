@@ -50,9 +50,9 @@ const ContactForm: FC = memo(() => {
         console.log(vaildationData);
         if (vaildationData.is_smtp_valid.value) {
           // setIsSending(true);
-          const serviceID: string = process.env.EMAILJS_SERVICE_ID!;
-          const templateID: string = process.env.EMAILJS_TEMPLATE_ID!;
-          const publicKey: string = process.env.EMAILJS_PUBLIC_KEY!;
+          const serviceID: string = process.env.EMAILJS_SERVICE_ID ? process.env.EMAILJS_SERVICE_ID : '';
+          const templateID: string = process.env.EMAILJS_TEMPLATE_ID ? process.env.EMAILJS_TEMPLATE_ID : '';
+          const publicKey: string = process.env.EMAILJS_PUBLIC_KEY ? process.env.EMAILJS_PUBLIC_KEY : '';
           emailjs.sendForm(serviceID, templateID, event.target as HTMLFormElement, publicKey)
             .then(result => {
               alert('Thanks for reaching out! We will get back to you shortly.');
